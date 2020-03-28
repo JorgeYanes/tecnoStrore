@@ -1,0 +1,21 @@
+<aside>
+    <input type="text" ng-model="downCtrl.search" placeholder="Search...">
+</aside>
+<article>
+    <div>
+        <table>
+            <tr>
+                <th></th>
+                <th>Nombre</th>
+                <th>Version</th>
+                <th>Android</th>
+            </tr>
+            <tr ng-repeat='apk in downCtrl.apkList | filter:downCtrl.search'>
+                <td><img ng-src="{{downCtrl.img + apk.name + '.png'}}"></td>
+                <td> {{ apk.name }} </td>
+                <td> {{ apk.version }} </td>
+                <td> {{ apk.support }} </td>
+            </tr>
+        </table>
+    </div>
+</article>

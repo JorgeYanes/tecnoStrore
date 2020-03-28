@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tecnoStore">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoStore</title>
+    <link rel="stylesheet" href="css/style.css"> </link>
+</head>
+
+<body>
+    <div>
+        el resultado es {{ 5 + 5 }}
+    </div>
+
+    <header>
+        <h1>Bienvenidos a tecnoStore</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a ui-sref="inicio">Inicio</a></li>
+            <li><a ui-sref="download">Descargas</a></li>
+            <li><a ui-sref="contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <ui-view></ui-view>
+    </section>
+    <footer>TecnoMovil Derechos Reservados &copy; 2020-2021</footer>
+
+
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/app.tecnoStore.js"></script>
+    <script src="js/config.tecnoStore.js"></script>
+    <script src="js/homeController.js"></script>
+    <script src="js/downloadController.js"></script>
+    <script src="js/contactController.js"></script>
+</body>
+
+</html>
